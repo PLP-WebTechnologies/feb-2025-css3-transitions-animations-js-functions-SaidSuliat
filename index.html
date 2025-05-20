@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personalized UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="greeting" class="fade-in">Welcome!</h1>
+
+  <button id="openModal">Set Name</button>
+  <button id="themeToggle">Toggle Theme</button>
+  <button id="animateBtn">Animate Me!</button>
+  <button id="clearData">Clear Data</button>
+
+  <div class="settings">
+    <label>Font Size:
+      <select id="fontSizeSelect">
+        <option value="16px">16px</option>
+        <option value="18px">18px</option>
+        <option value="20px">20px</option>
+      </select>
+    </label>
+
+    <label>Font Color:
+      <input type="color" id="fontColorPicker">
+    </label>
+  </div>
+
+  <!-- Modal -->
+  <div id="nameModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <p>Enter your name:</p>
+      <input type="text" id="nameInput" placeholder="Your name">
+      <button id="saveName">Save</button>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="./mixkit-sci-fi-click-900.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
